@@ -96,7 +96,11 @@ namespace PuppeteerSharp
             Client.MessageReceived += Client_MessageReceived;
         }
 
-        internal CDPSession Client { get; }
+        /// <summary>
+        /// CDP session for raw dev tools protocol
+        /// its just a shitty hack why the fuck i gotta have docs?
+        /// </summary>
+        public CDPSession Client { get; }
 
         #region Public Properties
 
